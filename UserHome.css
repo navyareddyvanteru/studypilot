@@ -1,0 +1,384 @@
+/* General styling */
+/* UserHome.css */
+body {/* Replace with the actual path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+}
+
+
+.user-home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Left and right chambers smaller than the middle */
+  height: 100%;
+}
+
+/* Left Chamber Styling */
+.left-chamber {
+  background-color: #ecf0f0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.student-icon {
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.user-info h3 {
+  margin: 10px 0 5px 0;
+}
+
+.user-info p {
+  color: #777;
+  font-size: 14px;
+}
+
+
+
+.nav-menu {
+  margin-top: 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #c10000;
+  text-align: center;
+}
+/* Style for the floating chat icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;  /* Adjust if you want it to be higher or lower */
+  right: 20px;   /* Right corner */
+  font-size: 40px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;  /* Ensure it's on top of other content */
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 80px;  /* Adjust to position it just above the chat icon */
+  right: 20px;   /* Align with the chat icon */
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-chat {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chatbox h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.time-table {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.timetable-header {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.classes, .exams {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.table {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timetable-entry {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.timetable-entry:last-child {
+  border-bottom: none;
+}
+
+.timetable-entry p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.timetable-entry strong {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .time-table {
+    margin: 15px;
+  }
+
+  .timetable-header {
+    font-size: 1.8em;
+  }
+
+  .classes, .exams {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .table {
+    padding: 8px;
+  }
+}
+/* General Styling */
+.time-table {
+  margin: 30px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.timetable-header {
+  font-size: 2.5em;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #2980b9;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Classes & Exams Sections */
+.classes, .exams {
+  margin-bottom: 40px;
+}
+
+/* Table Styling */
+.table {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timetable-entry {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timetable-entry:last-child {
+  border-bottom: none;
+}
+
+/* Text Styling */
+.timetable-entry p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+.timetable-entry strong {
+  color: #2980b9;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .time-table {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .timetable-header {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .table {
+    padding: 15px;
+  }
+
+  .timetable-entry p {
+    font-size: 1em;
+  }
+}
+
+/* Additional Enhancements */
+.timetable-entry:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Color Scheme */
+.time-table {
+  background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+}
+
+
+.menu-item:hover {
+  background-color: #e9e9e9;
+  color: #000;
+}
+
+/* Middle Chamber Styling */
+.middle-chamber {
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-chamber h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+/* Right Chamber Styling */
+.right-chamber {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #ffffff;
+  margin-right: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .left-chamber, .right-chamber {
+    display: none; /* Hide chambers on small screens */
+  }
+}
+.current-affairs {
+  margin: 20px 0; /* Spacing around current affairs */
+}
+
+.current-affairs h2 {
+  color: #000000; /* Color to match the theme */
+}
+
+.current-affairs ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.current-affairs li {
+  margin-bottom: 15px; /* Space between news items */
+  padding: 10px;
+  border: 1px solid #d1d1d1; /* Subtle border around each article */
+  border-radius: 5px; /* Rounded corners for articles */
+  background-color: #f9f9f9; /* Light background for articles */
+}
+
+.current-affairs li a {
+  color: #000408; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.current-affairs li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+.bottom-navbar {
+  background-color: #ffffff; /* Navbar background color */
+  padding: 10px 20px; /* Padding for the navbar */
+  position: fixed; /* Fix the navbar to the bottom */
+  bottom: 0; /* Position it at the bottom of the viewport */
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-around; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.nav-option {
+  color: #da1616; /* Text color for options */
+  text-decoration: none; /* Remove underline */
+  font-size: 10px; /* Font size */
+  padding: 5px; /* Padding for each option */
+  border-radius: 2px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-option:hover {
+  background-color: #e9e9e9; /* Background color on hover */
+  color: #000; /* Text color on hover */
+}
+
+.nav-option.active {
+  font-weight: bold; /* Highlight active option */
+  color: #0c1015; /* Different color for active option */
+  border-bottom: 2px solid #000000; /* Underline effect for active option */
+}
+.btn:not(:last-child) {
+  margin-right: 50px; /* Add margin to the right of each button except the last one */
+}
