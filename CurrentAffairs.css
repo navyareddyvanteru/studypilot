@@ -1,0 +1,39 @@
+/* UserHome.css */
+.middle-chamber {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content horizontally */
+    justify-content: center; /* Centering the content vertically */
+    padding: 20px; /* Adding some padding */
+    flex: 1; /* Allowing it to take the remaining space */
+  }
+  
+  .current-affairs {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set a max width for the current affairs section */
+    width: 100%; /* Allow it to take full width up to the max-width */
+  }
+  
+  .current-affair-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .current-affair-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff; /* Matching color with buttons */
+  }
+  
+  .current-affair-item p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
