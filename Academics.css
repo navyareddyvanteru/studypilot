@@ -1,0 +1,93 @@
+/* Academics Page Styles */
+.academics {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #f1f2f6, #e3e4e8);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .academics h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .student-info {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .student-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .student-info p {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 8px 0;
+  }
+  
+  .subjects {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subjects h3 {
+    color: #2980b9;
+    font-size: 1.9em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .subject-details {
+    margin-bottom: 30px;
+  }
+  
+  .subject-details h4 {
+    font-size: 1.6em;
+    color: #16a085;
+    font-weight: 500;
+  }
+  
+  .subject-details p {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 6px 0;
+  }
+  
+  .subject-details p strong {
+    color: #2980b9;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .academics {
+      padding: 20px;
+    }
+  
+    .student-info,
+    .subjects {
+      padding: 20px;
+    }
+  
+    .academics h2 {
+      font-size: 2em;
+    }
+  
+    .subjects h3 {
+      font-size: 1.6em;
+    }
+  }
+  
