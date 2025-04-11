@@ -1,0 +1,64 @@
+/* Chatbot.css */
+.chatbot {
+    padding: 15px;
+    background-color: #ffffff; /* A cleaner background for contrast */
+    border: 1px solid #d1d1d1; /* Lighter border for a softer look */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    font-family: 'Arial', sans-serif; /* Professional font */
+    max-width: 350px; /* Set a max-width for the chatbot */
+  }
+  
+  .chat-window {
+    max-height: 300px; /* Reduced height for a more compact view */
+    overflow-y: auto; /* Scrollable for long conversations */
+    margin-bottom: 15px;
+    padding: 10px; /* Padding for the text inside the chat window */
+    border: 1px solid #e1e1e1; /* Subtle border for the chat window */
+    border-radius: 5px; /* Rounded corners for the chat window */
+    background-color: #f9f9f9; /* Light background for the chat area */
+  }
+  
+  .message {
+    margin: 8px 0;
+    padding: 8px 10px; /* Padding for message bubbles */
+    border-radius: 5px;
+    background-color: #e9ecef; /* Light grey background for messages */
+    color: #333; /* Darker text for better readability */
+    max-width: 90%; /* Limit width of messages */
+    word-wrap: break-word; /* Allow long words to break */
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-button {
+    margin: 5px 0;
+    padding: 12px; /* Slightly larger padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    font-weight: bold; /* Make button text bold */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for scaling effect */
+  }
+  
+  .option-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .option-button:active {
+    transform: scale(0.95); /* Scale down when clicked for feedback */
+  }
+  
+  h2 {
+    text-align: center; /* Center the title */
+    color: #ed740a93; /* Matching color with buttons */
+    font-size: 24px; /* Increase font size for the title */
+    margin-bottom: 15px; /* Spacing below the title */
+  }
+  
